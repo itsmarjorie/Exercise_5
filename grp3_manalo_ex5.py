@@ -1,68 +1,64 @@
-# Calculate the length of a string
-
-text = input("Enter a string: ")
+text = "Marjorie B. Manalo"
 
 length = len(text)
 
-print("Length of the string is:", length)
+print("The length of the string is:", length)
 
-# Count the number of characters in a string
+print()
 
-text = input("Enter a string: ")
+text = "BSIT - 1V"
 
 count = 0
 for char in text:
-  count = count + 1
+    count += 1
 
-print("Number of characters:", count)
+print("Total number of characters:", count)
 
-# Replace all occurrences of the first character with $
+print()
 
-text = input("Enter a string: ")
+text = "Sya lang"
 
 first_char = text[0]
 
 new_string = first_char + text[1:].replace(first_char, '$')
 
-print("Result:", new_string)
+print("Modified string:", new_string)
 
-# Swap first two characters of two strings
+print()
 
-str1 = input("Enter first string: ")
-str2 = input("Enter second string: ")
+str1 = "Marjorie"
+str2 = "Manalo"
 
 new_str1 = str2[:2] + str1[2:]
 new_str2 = str1[:2] + str2[2:]
 
-result = new_str1 + " " + new_str2
+print("Result:", new_str1 + " " + new_str2)
 
-print("Result:", result)
-
-# Concatenate 4 variables
+print()
 
 a = "I"
-b = "LOVE"
+b = "MISS"
 c = "YOU"
 d = "SO MUCH"
 
-sentence = a + " " + b + " " + c + " " + d
+result = a + " " + b + " " + c + " " + d
 
-print(sentence)
+print(result)
 
-# Concatenate two strings from user input
+print()
 
-str1 = input("Enter first string: ")
-str2 = input("Enter second string: ")
+first_str = "Sya lang po"
+second_str = "ang mahal ko"
 
-result = str1 + " " + str2
+result = first_str + " " + second_str
 
 print("Concatenated string:", result)
 
-# Name and age in a paragraph
+print()
 
-name = "Marjorie Manalo"
+name = "Marjorie B. Manalo"
 age = "18"
 
-paragraph = "My name is " + name + " and I am " + age + " years old. I am currently studying and learning Python programming."
+paragraph = "My name is " + name + " and I am " + age + " years old. I am currently studying programming and learning Python."
 
 print(paragraph)
